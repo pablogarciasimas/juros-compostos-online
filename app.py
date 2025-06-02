@@ -1,5 +1,13 @@
-# app.py
 import streamlit as st
+import streamlit.components.v1 as components
+
+# Metatag de verificação do Google AdSense
+components.html(
+    """
+    <meta name="google-adsense-account" content="ca-pub-9780795734195092">
+    """,
+    height=0
+)
 
 st.set_page_config(page_title="Calculadora de Juros Compostos", layout="centered")
 
